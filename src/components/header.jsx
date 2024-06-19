@@ -9,12 +9,6 @@ const Head = styled.header`
     align-items: center;
     flex-direction: column;
 `
-const Cover = styled.body`
-    display: inline-block;
-    width: 100%;
-    background-size: cover;
-    height: 100vh;
-`
 const MainPage = styled.p`
     color: white;
     font-family: "Barlow";
@@ -29,7 +23,6 @@ const OrderIt = styled.p`
 export default function Header () {
 
     return (
-        <Cover>
             <Head>
                 <div style={{width:"574px", height:"210px", display:"flex", flexDirection:"column", justifyContent:"space-around", alignItems:"center"}}>
                     <img src="../../Assets/mile1-assets/logo.svg" style={{width:"360px", height:"45px", marginTop:"21px"}}/>
@@ -39,6 +32,5 @@ export default function Header () {
                     </div>
                 </div>
             </Head>
-        </Cover>
     )
 }
