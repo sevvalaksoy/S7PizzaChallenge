@@ -15,7 +15,7 @@ export default function Size () {
 
     return (
         <Cover>
-            <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", gap:"1.5rem", color:"#5F5F5F", marginTop:"1.5rem", fontWeight:"500"}}>
+            <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", gap:"1rem", color:"#5F5F5F", marginTop:"1.5rem", fontWeight:"500"}}>
                 <p style={{fontFamily:"Barlow", fontSize:"20px", fontWeight:"600", color:"black", margin:"0"}}>Boyut Seç<i style={{color:"#D80027"}}>*</i></p>
                 <label >
                     <input type="radio" name="Cornicione" value="küçük" onChange={handleChange}/>Küçük
