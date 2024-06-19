@@ -11,7 +11,7 @@ const Slogan = styled.p`
     font-size: 5rem;
     margin: 0;
     // font-family: Roboto Condensed;
-    // font-weight: 300;
+    font-weight: 300;
 `
 const ButtonForm = styled.button`
     color: black;
@@ -20,7 +20,7 @@ const ButtonForm = styled.button`
     width: 194px;
     height: 56px;
     // font-family: Barlow;
-     // font-weight: 600;
+    font-weight: 600;
 `
 
 const Cover = styled.body`
