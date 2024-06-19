@@ -18,6 +18,7 @@ const Cover = styled.section`
     display: inline-block;
     width: 574px;
     text-align: left;
+    margin-top: 3rem;
 `
 
 export default function Ingridients () {
