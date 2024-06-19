@@ -1,16 +1,11 @@
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 import styled from "styled-components"
 
-const Title = styled.h1`
-    color: white;
-    font-weight: 900;
-    // font-family: Londrina Solid;
-`
 const Slogan = styled.p`
     color: white;
     font-size: 5rem;
     margin: 0;
-    // font-family: Roboto Condensed;
+    font-family: "Roboto Condensed";
     font-weight: 300;
 `
 const ButtonForm = styled.button`
@@ -19,7 +14,7 @@ const ButtonForm = styled.button`
     border-radius: 50px;
     width: 194px;
     height: 56px;
-    // font-family: Barlow;
+    font-family: "Barlow";
     font-weight: 600;
 `
 
@@ -42,9 +37,9 @@ export default function Home () {
 
     return (
             <Cover>
-                <Title>Teknolojik Yemekler</Title>
+                <img src="../../Assets/mile1-assets/logo.svg" style={{marginTop:"116px"}}/>
                 <div>
-                    <Slogan>KOD ACIKTIRIR, <br></br> PİZZA DOYURUR</Slogan>
+                    <Slogan>KOD ACIKTIRIR <br></br> PİZZA, DOYURUR</Slogan>
                     <ButtonForm onClick={clickHandler}>ACIKTIM</ButtonForm>
                 </div>
             </Cover>
