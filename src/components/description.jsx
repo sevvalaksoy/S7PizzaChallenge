@@ -31,7 +31,7 @@ export default function Description () {
         <Cover>
             <Name>Position Absolute Acı Pizza</Name>
             <Price>85.50₺
-                <Price style={{fontWeight:"400", fontSize:"16px"}}>4.9 <div style={{width:"100px"}}></div>(200)</Price>
+                <Price style={{fontWeight:"400", fontSize:"16px", color:"#5F5F5F"}}>4.9 <div style={{width:"100px"}}></div>(200)</Price>
             </Price>
             <Descrp>Frontent Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. 
                 Pizza, domates, peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, 
