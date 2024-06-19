@@ -9,13 +9,13 @@ function App() {
   return (
     <>
       <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <Home/>
         </Route>
-        <Route path="/order">
+        <Route path="/order" exact>
           <Order/>
         </Route>
-        <Route>
+        <Route path="/success" exact>
           <Success/>
         </Route>
       </Switch>
