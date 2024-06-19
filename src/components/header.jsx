@@ -27,7 +27,7 @@ export default function Header () {
                 <div style={{width:"574px", height:"210px", display:"flex", flexDirection:"column", justifyContent:"space-around", alignItems:"center"}}>
                     <img src="../../Assets/mile1-assets/logo.svg" style={{width:"360px", height:"45px", marginTop:"21px"}}/>
                     <div style={{display:"flex", justifyContent:"flex-start", width:"100%", marginBottom:"-20px"}}>
-                        <MainPage>Anasayfa - </MainPage>
+                        <MainPage>Anasayfa - <span style={{color:"#CE2829"}}>{" ı"}</span></MainPage>
                         <OrderIt>Sipariş Oluştur</OrderIt>
                     </div>
                 </div>

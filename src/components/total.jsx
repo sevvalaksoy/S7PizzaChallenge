@@ -10,13 +10,15 @@ const Cover = styled.section`
 `
 const DecreaseButton = styled.button`
     background-color: #FDC913;
-    border-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
     width: 47px;
     height: 56px;
 `
 const IncreaseButton = styled.button`
     background-color: #FDC913;
-    border-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
     width: 47px;
     height: 56px;
 `
@@ -49,7 +51,7 @@ export default function Total () {
                 <p style={{width:"46px", height:"55px", border:"1px, solid, #D9D9D9", alignItems:"center", display:"flex", justifyContent:"center"}}>{count}</p>
                 <IncreaseButton onClick={decrease}>+</IncreaseButton>
             </div>
-            <div >
+            <div style={{marginRight:"-2rem"}}>
                 <div style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"18px", display:"inline-block", width:"386px", height:"197px", border:"1px, solid, #D9D9D9", borderRadius:"6px"}}>
                     <p style={{fontSize:"20px", color:"#292929", textAlign:"left", marginTop:"2.5rem", paddingLeft:"2.8rem"}}>Sipariş Toplamı</p>
                     <div style={{color:"#5F5F5F", display:"flex", justifyContent:"space-around", gap:"5rem"}}>

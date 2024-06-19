@@ -4,6 +4,7 @@ const Name = styled.p`
     font-family: "Barlow";
     font-size: 22px;
     font-weight: 600;
+    color: #292929;
 `
 const Cover = styled.section`
     display: inline-block;
@@ -17,6 +18,7 @@ const Price = styled.div`
     font-weight: 700;
     font-size: 28px;
     align-items: center;
+    color: #292929;
 `
 const Descrp = styled.p`
     font-family: "Barlow";

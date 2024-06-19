@@ -9,7 +9,7 @@ const Slogan = styled.p`
     font-weight: 300;
 `
 const ButtonForm = styled.button`
-    color: black;
+    color: #292929;
     background-color: #FDC913;
     border-radius: 50px;
     width: 194px;
