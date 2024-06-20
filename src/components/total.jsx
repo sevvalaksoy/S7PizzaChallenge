@@ -100,7 +100,7 @@ export default function Total (props) {
                         <p>{(price+selected)*count}₺</p>
                     </div>
                 </OrderPrice>
-                <OrderButton disabled={!isValid} onClick={handleSubmit} type="submit">SİPARİŞ VER</OrderButton>
+                <OrderButton data-cy="submit-button" disabled={!isValid} onClick={handleSubmit} type="submit">SİPARİŞ VER</OrderButton>
             </div>
         </Cover>
     )

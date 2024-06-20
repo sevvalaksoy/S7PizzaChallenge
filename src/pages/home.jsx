@@ -40,7 +40,7 @@ export default function Home () {
                 <img src="../../Assets/mile1-assets/logo.svg" style={{marginTop:"116px"}}/>
                 <div>
                     <Slogan>KOD ACIKTIRIR <br></br> PİZZA, DOYURUR</Slogan>
-                    <ButtonForm onClick={clickHandler}>ACIKTIM</ButtonForm>
+                    <ButtonForm onClick={clickHandler} data-cy="acıktım-button">ACIKTIM</ButtonForm>
                 </div>
             </Cover>
     )

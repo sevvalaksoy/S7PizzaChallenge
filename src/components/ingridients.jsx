@@ -52,16 +52,16 @@ export default function Ingridients (props) {
             <Warning>En fazla 10 malzeme seçebilirsiniz. 5₺</Warning>
             <div style={{color:"#5F5F5F", fontFamily:"Barlow", fontWeight:"700", fontSize:"16px", width:"586px", height:"214px",display:"flex", flexDirection:"column", flexWrap:"wrap", gap:"1rem"}}>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="pepperoni" style={{marginRight:"1rem"}}/>Pepperoni
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="pepperoni" data-cy="pep-ing" style={{marginRight:"1rem"}}/>Pepperoni
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="tavukIzgara" style={{marginRight:"1rem"}}/>Tavuk Izgara
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="tavukIzgara" data-cy="tI-ing" style={{marginRight:"1rem"}}/>Tavuk Izgara
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="mısır" style={{marginRight:"1rem"}}/>Mısır
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="mısır" data-cy="mıs-ing" style={{marginRight:"1rem"}}/>Mısır
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="sarımsak" style={{marginRight:"1rem"}}/>Sarımsak
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="sarımsak" data-cy="sar-ing" style={{marginRight:"1rem"}}/>Sarımsak
                 </label>
                 <label className="ingredients">
                     <input type="checkbox" onChange={handleChange} name="malzemeler" value="ananas" style={{marginRight:"1rem"}}/>Ananas

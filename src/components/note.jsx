@@ -26,7 +26,7 @@ export default function Note (props) {
     return (
         <Cover>
             <label htmlFor="name" style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"20px", color:"#292929"}}>İsminiz:</label><br></br> 
-            <input type="text-area" id="name" name="isim" onChange={handleChange} value={formData.isim} placeholder="İsminizi giriniz." 
+            <input data-cy="name-input" type="text-area" id="name" name="isim" onChange={handleChange} value={formData.isim} placeholder="İsminizi giriniz." 
             style={{width:"554px", height:"56px", paddingLeft:"1rem", borderRadius:"6px", border:"1px, solid, gray", margin:"1.5rem 0"}}/>
             <p style={{color:"red", margin:"-.5rem 1rem 2rem"}}>{errors.isim && errorMessages.isim}</p>
             <label htmlFor="note" style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"20px", color:"#292929"}}>Sipariş Notu</label><br></br>      
