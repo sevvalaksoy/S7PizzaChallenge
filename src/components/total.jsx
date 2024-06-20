@@ -79,7 +79,6 @@ export default function Total (props) {
             console.log(response.data)
             history.push("/success");
         })
-        console.log(formData);
     }
 
     return (
