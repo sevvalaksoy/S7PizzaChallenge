@@ -18,7 +18,7 @@ const ButtonForm = styled.button`
     font-weight: 600;
 `
 
-const Cover = styled.body`
+const Cover = styled.div`
     display: inline-block;
     width: 100%;
     background: url("../Assets/mile1-assets/home-banner.png");

@@ -1,4 +1,6 @@
+import axios from "axios"
 import { useState } from "react"
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 import styled from "styled-components"
 
 const Cover = styled.section`
@@ -32,38 +34,74 @@ const OrderButton = styled.button`
     font-weight: 600;
     margin-top: -.2rem;
 `
+const OrderPrice = styled.div`
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    width: 386px;
+    height: 197px;
+    border: 1px, solid, #D9D9D9;
+    border-radius: 6px;
+`
 
-export default function Total () {
+export default function Total (props) {
+
+    const {price, formData, setFormData, initialData, isValid} = props;
 
     const [count, setCount] = useState(1);
 
+    let selected = formData.malzemeler.length*5;
+
+    let history = useHistory();
+
+    if(count<=0){
+        setCount(1);
+    }
     function increase () {
-        setCount(count +1)
+        setCount(count +1);
+        setFormData({...formData, adet:count+1});
     }
     function decrease () {
-        setCount(count -1)
+        setCount(count -1);
+        setFormData({...formData, adet:count-1});
+    }
+    
+    console.log(formData);
+
+    function handleSubmit (event) {
+        event.preventDefault();
+        if(!isValid) return;
+
+        const URL = "https://reqres.in/api/pizza";
+        axios.post(URL, formData).then((response)=>{
+            setFormData(initialData);
+            console.log(response.data)
+            history.push("/success");
+        })
+        console.log(formData);
     }
 
     return (
         <Cover>
             <div style={{display:"flex", alignItems:"center", marginTop:"-1rem"}}>
-                <DecreaseButton onClick={increase}>-</DecreaseButton>
+                <DecreaseButton onClick={decrease}>-</DecreaseButton>
                 <p style={{width:"46px", height:"55px", border:"1px, solid, #D9D9D9", alignItems:"center", display:"flex", justifyContent:"center"}}>{count}</p>
-                <IncreaseButton onClick={decrease}>+</IncreaseButton>
+                <IncreaseButton onClick={increase}>+</IncreaseButton>
             </div>
             <div style={{marginRight:"-2rem"}}>
-                <div style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"18px", display:"inline-block", width:"386px", height:"197px", border:"1px, solid, #D9D9D9", borderRadius:"6px"}}>
+                <OrderPrice>
                     <p style={{fontSize:"20px", color:"#292929", textAlign:"left", marginTop:"2.5rem", paddingLeft:"2.8rem"}}>Sipariş Toplamı</p>
                     <div style={{color:"#5F5F5F", display:"flex", justifyContent:"space-around", gap:"5rem"}}>
                         <p style={{margin:"0"}}>Seçimler</p>
-                        <p style={{margin:"0"}}>25.00₺</p>
+                        <p style={{margin:"0"}}>{selected}₺</p>
                     </div>
                     <div style={{color:"#CE2829",display:"flex", justifyContent:"space-around", gap:"5.5rem"}}>
                         <p>Toplam</p>
-                        <p>115.00₺</p>
+                        <p>{(price+selected)*count}₺</p>
                     </div>
-                </div>
-                <OrderButton>SİPARİŞ VER</OrderButton>
+                </OrderPrice>
+                <OrderButton disabled={!isValid} onClick={handleSubmit} type="submit">SİPARİŞ VER</OrderButton>
             </div>
         </Cover>
     )

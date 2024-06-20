@@ -27,12 +27,13 @@ const Descrp = styled.p`
     color: #5F5F5F;
     width: 580px;
 `
-export default function Description () {
+export default function Description (props) {
+    const {initialPrice} = props;
 
     return (
         <Cover>
             <Name>Position Absolute Acı Pizza</Name>
-            <Price>85.50₺
+            <Price>{initialPrice}₺
                 <Price style={{fontWeight:"400", fontSize:"16px", color:"#5F5F5F"}}>4.9 <div style={{width:"100px"}}></div>(200)</Price>
             </Price>
             <Descrp>Frontent Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. 

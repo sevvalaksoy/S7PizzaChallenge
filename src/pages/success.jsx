@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Cover = styled.body`
+const Cover = styled.div`
     background: #CE2829;
     display: inline-block;
     width: 100%;
