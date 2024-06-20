@@ -36,16 +36,14 @@ export default function Ingridients (props) {
             newValue = [...oldValues, value];
         }
         setFormData({...formData, [name]:newValue});
-        console.log(formData[name]);
-        
-        if(formData[name].length<4 || formData[name].length>10) {
+
+        if(formData.malzemeler.length<4 || formData.malzemeler.length>10) {
             setErrors({...errors, [name]:true})
         } else {
             setErrors({...errors, [name]:false})
         }
     }
 
-    
     return (
         <Cover>
             <Title>Ek Malzemeler</Title>
