@@ -31,7 +31,7 @@ const errorMessages = {
     malzemeler: "En az 4 en fazla 10 adet seçiniz!"
 }
 
-let initialPrice = "85.50";
+let initialPrice = 85.50;
 
 export default function Order () {
     const [price] = useState(initialPrice);

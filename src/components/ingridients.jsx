@@ -25,7 +25,7 @@ const Cover = styled.section`
 export default function Ingridients (props) {
 
     const {setFormData, formData, errors, setErrors, errorMessages} = props;
-
+    
     function handleChange (event){
         const {name, value} = event.target;
         let newValue;
@@ -37,7 +37,9 @@ export default function Ingridients (props) {
         }
         setFormData({...formData, [name]:newValue});
 
-        if(formData.malzemeler.length<4 || formData.malzemeler.length>10) {
+        let selected = newValue.length;
+
+        if(selected<4 || selected>10) {
             setErrors({...errors, [name]:true})
         } else {
             setErrors({...errors, [name]:false})
