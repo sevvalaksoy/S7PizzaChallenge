@@ -41,19 +41,23 @@ const Barmenu = styled.section`
 const Titles = styled.p`
     font-family: "Barlow";
     font-weight: 500;
-    color: #292929;
     font-size: 18px;
     display: inline;
 `
 const Menu = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    color: #292929;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 60px;
+    width: 186px;
+    height: 80px;
 
     &:hover {
         cursor: pointer;
-        background-color: #FAF7F2;
+        background-color: #292929;
+        color: white;
         border-radius: 60px;
         padding: 0 1rem;
     }
@@ -94,6 +98,19 @@ const ThirdDiv = styled.div`
     background-repeat: no-repeat;
     display: flex;
 `
+const Options = styled.div`
+    width: 1320px;
+    height: 778px;
+    margin: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+const Card = styled.div`
+    width: 416px;
+    height: 440px;
+    border-radius: 12px;
+`
 
 export default function Home () {
 
@@ -104,7 +121,7 @@ export default function Home () {
     }
 
     return (
-        <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center"}}>
+        <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", backgroundColor:"#FAF7F2"}}>
             <Cover>
                 <div style={{margin:"3rem 0"}}>
                 <img src="../../Assets/mile1-assets/logo.svg"/>
@@ -143,7 +160,7 @@ export default function Home () {
                     </Menu>
                 </ul>
             </Barmenu>
-            <div style={{width:"1320px", height:"560px", display:"flex", gap:"2rem"}}>
+            <div style={{width:"1320px", height:"560px", display:"flex", gap:"2rem", marginTop:"6rem"}}>
                 <FirstDiv>
                     <div style={{width:"263px", height:"300px", margin:"0", display:"flex", flexDirection:"column", padding:"3rem"}}>
                         <h1 style={{fontFamily:"Quattrocento", fontWeight:"600", fontSize:"68px", color:"white", textAlign:"left", margin:"0"}}>Özel Lezzetus</h1>
@@ -166,6 +183,73 @@ export default function Home () {
                     </ThirdDiv>
                 </div>
             </div>
+            <Options>
+                <p style={{fontFamily:"Satisfy", fontSize:"32px", fontWeight:"400", color:"#CE2829"}}>en çok paketlenen menüler</p>
+                <p style={{fontFamily:"Barlow", fontSize:"42px", fontWeight:"600", color:"#292929"}}>Acıktıran Kodlara Doyuran Lezzetler</p>
+                <Barmenu style={{backgroundColor:"#FAF7F2"}}>
+                    <ul style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
+                        <Menu>
+                            <img src="../../Assets/mile2-aseets/icons/1.svg"/>
+                            <Titles>Ramen</Titles>
+                        </Menu>
+                        <Menu>
+                            <img src="../../Assets/mile2-aseets/icons/2.svg"/>
+                            <Titles>Pizza</Titles>
+                        </Menu>
+                        <Menu>
+                            <img src="../../Assets/mile2-aseets/icons/3.svg"/>
+                            <Titles>Burger</Titles>
+                        </Menu>
+                        <Menu>
+                            <img src="../../Assets/mile2-aseets/icons/4.svg"/>
+                            <Titles>French fries</Titles>
+                        </Menu>
+                        <Menu>
+                            <img src="../../Assets/mile2-aseets/icons/5.svg"/>
+                            <Titles>Fast food</Titles>
+                        </Menu>
+                        <Menu>
+                            <img src="../../Assets/mile2-aseets/icons/6.svg"/>
+                            <Titles>Soft drinks</Titles>
+                        </Menu>
+                    </ul>
+                </Barmenu>
+                <div style={{width:"100%", display:"flex", justifyContent:"space-around", margin:"2rem"}}>
+                    <div style={{backgroundColor:"white", width:"416px", borderRadius:"12px"}}>
+                        <img src="../../Assets/mile2-aseets/pictures/food-1.png"/>
+                        <div>
+                            <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Terminal Pizza</p>
+                            <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
+                                <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"16px", color:"#1B1B1BB2"}}>4.9</p>
+                                <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"16px", color:"#1B1B1BB2"}}>(200)</p>
+                                <p style={{fontFamily:"Barlow", fontWeight:"700", fontSize:"20px", color:"#292929"}}>60₺</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{backgroundColor:"white", width:"416px", borderRadius:"12px"}}>
+                        <img src="../../Assets/mile2-aseets/pictures/food-2.png"/>
+                        <div>
+                            <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Position Absolute Acı Pizza</p>
+                            <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
+                                <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"16px", color:"#1B1B1BB2"}}>4.9</p>
+                                <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"16px", color:"#1B1B1BB2"}}>(928)</p>
+                                <p style={{fontFamily:"Barlow", fontWeight:"700", fontSize:"20px", color:"#292929"}}>85₺</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{backgroundColor:"white", width:"416px", borderRadius:"12px"}}>
+                        <img src="../../Assets/mile2-aseets/pictures/food-3.png"/>
+                        <div>
+                            <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>useEffect Tavuklu Burger</p>
+                            <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
+                                <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"16px", color:"#1B1B1BB2"}}>4.9</p>
+                                <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"16px", color:"#1B1B1BB2"}}>(462)</p>
+                                <p style={{fontFamily:"Barlow", fontWeight:"700", fontSize:"20px", color:"#292929"}}>75₺</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Options>
         </div>
     )
 }
