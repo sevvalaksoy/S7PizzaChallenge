@@ -110,6 +110,12 @@ const Card = styled.div`
     width: 416px;
     height: 440px;
     border-radius: 12px;
+    background-color: white;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05)
+    }
 `
 
 export default function Home () {
@@ -165,20 +171,20 @@ export default function Home () {
                     <div style={{width:"263px", height:"300px", margin:"0", display:"flex", flexDirection:"column", padding:"3rem"}}>
                         <h1 style={{fontFamily:"Quattrocento", fontWeight:"600", fontSize:"68px", color:"white", textAlign:"left", margin:"0"}}>Özel Lezzetus</h1>
                         <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"20px", color:"white"}}>Position: Absolute Acı Burger</p>
-                        <SipVerButton>SİPARİŞ VER</SipVerButton>
+                        <SipVerButton onClick={clickHandler}>SİPARİŞ VER</SipVerButton>
                     </div>
                 </FirstDiv>
                 <div style={{display:"flex", flexDirection:"column", width:"50%", gap:"2rem"}}>
                     <SecondDiv>
                         <div style={{display:"flex", flexDirection:"column", padding:"3rem", width:"260px", height:"160px", gap:"2rem"}}>
                             <h1 style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"32px", color:"white", textAlign:"left", margin:"0"}}>Hackathlon Burger Menü</h1>
-                            <SipVerButton>SİPARİŞ VER</SipVerButton>
+                            <SipVerButton onClick={clickHandler}>SİPARİŞ VER</SipVerButton>
                         </div>
                     </SecondDiv>
                     <ThirdDiv>
                         <div style={{display:"flex", flexDirection:"column", padding:"3rem", width:"260px", height:"160px", gap:"2rem"}}>
                             <h1 style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"32px", color:"#292929", textAlign:"left", margin:"0"}}><span style={{color:"#D80027"}}>Çoooook</span> hızlı <br></br>npm gibi kurye</h1>
-                            <SipVerButton>SİPARİŞ VER</SipVerButton>
+                            <SipVerButton onClick={clickHandler}>SİPARİŞ VER</SipVerButton>
                         </div>
                     </ThirdDiv>
                 </div>
@@ -215,7 +221,7 @@ export default function Home () {
                     </ul>
                 </Barmenu>
                 <div style={{width:"100%", display:"flex", justifyContent:"space-around", margin:"2rem"}}>
-                    <div style={{backgroundColor:"white", width:"416px", borderRadius:"12px"}}>
+                    <Card onClick={clickHandler}>
                         <img src="../../Assets/mile2-aseets/pictures/food-1.png"/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Terminal Pizza</p>
@@ -225,8 +231,8 @@ export default function Home () {
                                 <p style={{fontFamily:"Barlow", fontWeight:"700", fontSize:"20px", color:"#292929"}}>60₺</p>
                             </div>
                         </div>
-                    </div>
-                    <div style={{backgroundColor:"white", width:"416px", borderRadius:"12px"}}>
+                    </Card>
+                    <Card onClick={clickHandler}>
                         <img src="../../Assets/mile2-aseets/pictures/food-2.png"/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Position Absolute Acı Pizza</p>
@@ -236,8 +242,8 @@ export default function Home () {
                                 <p style={{fontFamily:"Barlow", fontWeight:"700", fontSize:"20px", color:"#292929"}}>85₺</p>
                             </div>
                         </div>
-                    </div>
-                    <div style={{backgroundColor:"white", width:"416px", borderRadius:"12px"}}>
+                    </Card>
+                    <Card onClick={clickHandler}>
                         <img src="../../Assets/mile2-aseets/pictures/food-3.png"/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>useEffect Tavuklu Burger</p>
@@ -247,9 +253,12 @@ export default function Home () {
                                 <p style={{fontFamily:"Barlow", fontWeight:"700", fontSize:"20px", color:"#292929"}}>75₺</p>
                             </div>
                         </div>
-                    </div>
+                    </Card>
                 </div>
             </Options>
+            <footer style={{width:"100%", backgroundColor:"#1A1A1A", height:"560px"}}>
+
+            </footer>
         </div>
     )
 }
