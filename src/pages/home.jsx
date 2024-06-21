@@ -21,7 +21,7 @@ const ButtonForm = styled.button`
 const Cover = styled.div`
     display: inline-block;
     width: 100%;
-    background: url("../Assets/mile1-assets/home-banner.png");
+    background: url("../../Assets/mile1-assets/home-banner.png");
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -57,6 +57,42 @@ const Menu = styled.div`
         border-radius: 60px;
         padding: 0 1rem;
     }
+`
+const FirstDiv = styled.div`
+    width: 50%;
+    height: 100%;
+    border-radius: 12px;
+    background: url("../../Assets/mile2-aseets/cta/kart-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+`
+const SipVerButton = styled.button`
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;
+    width: 138px;
+    height: 45px;
+    color: #CE2829;
+    background-color: white;
+`
+const SecondDiv = styled.div`
+    width: 100%;
+    height: 50%;
+    border-radius: 12px;
+    background: url("../../Assets/mile2-aseets/cta/kart-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+`
+const ThirdDiv = styled.div`
+    width: 100%;
+    height: 50%;
+    border-radius: 12px;
+    background: url("../../Assets/mile2-aseets/cta/kart-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
 `
 
 export default function Home () {
@@ -107,15 +143,28 @@ export default function Home () {
                     </Menu>
                 </ul>
             </Barmenu>
-            <div style={{width:"1320px", height:"560px", background:"red"}}>
-                <div style={{width:"636px", height:"100%"}}>
-                    <div style={{width:"263px", height:"300px", margin:"3rem 4rem", display:"flex", flexDirection:"column"}}>
+            <div style={{width:"1320px", height:"560px", display:"flex", gap:"2rem"}}>
+                <FirstDiv>
+                    <div style={{width:"263px", height:"300px", margin:"0", display:"flex", flexDirection:"column", padding:"3rem"}}>
                         <h1 style={{fontFamily:"Quattrocento", fontWeight:"600", fontSize:"68px", color:"white", textAlign:"left", margin:"0"}}>Özel Lezzetus</h1>
                         <p style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"20px", color:"white"}}>Position: Absolute Acı Burger</p>
-                        <button style={{backgroundColor:"white", color:"#CE2829", fontFamily:"Barlow", fontWeight:"600", fontSize:"14px", borderRadius:"50px", width:"138px", height:"48px"}}>SİPARİŞ VER</button>
+                        <SipVerButton>SİPARİŞ VER</SipVerButton>
                     </div>
+                </FirstDiv>
+                <div style={{display:"flex", flexDirection:"column", width:"50%", gap:"2rem"}}>
+                    <SecondDiv>
+                        <div style={{display:"flex", flexDirection:"column", padding:"3rem", width:"260px", height:"160px", gap:"2rem"}}>
+                            <h1 style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"32px", color:"white", textAlign:"left", margin:"0"}}>Hackathlon Burger Menü</h1>
+                            <SipVerButton>SİPARİŞ VER</SipVerButton>
+                        </div>
+                    </SecondDiv>
+                    <ThirdDiv>
+                        <div style={{display:"flex", flexDirection:"column", padding:"3rem", width:"260px", height:"160px", gap:"2rem"}}>
+                            <h1 style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"32px", color:"#292929", textAlign:"left", margin:"0"}}><span style={{color:"#D80027"}}>Çoooook</span> hızlı <br></br>npm gibi kurye</h1>
+                            <SipVerButton>SİPARİŞ VER</SipVerButton>
+                        </div>
+                    </ThirdDiv>
                 </div>
-                <div></div>
             </div>
         </div>
     )
