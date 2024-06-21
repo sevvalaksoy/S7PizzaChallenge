@@ -63,10 +63,12 @@ const Box = styled.div`
 
 export default function Success (props) {
 
-    const {responseData} = props;
+    const {responseData, price, count, formData} = props;
 
     window.scrollTo(0,0);
-   
+    
+    let selected = formData.malzemeler.length*5;
+
     return (
         <Cover>
             <section style={{display:"flex", justifyContent:"center"}}>
@@ -90,11 +92,11 @@ export default function Success (props) {
                         <p style={{fontSize:"20px", textAlign:"left", width:"155px"}}>Sipariş Toplamı</p>
                         <div style={{display:"flex", justifyContent:"space-around", gap:"4rem"}}>
                             <p>Seçimler</p>
-                            <p>25₺</p>
+                            <p>{selected}₺</p>
                         </div>
                         <div style={{display:"flex", justifyContent:"space-around", gap:"4rem"}}>
                             <p>Toplam</p>
-                            <p>115₺</p>
+                            <p>{(price+selected)*count}₺</p>
                         </div>
                     </Box>
                     <footer style={{height:"100px"}}></footer>

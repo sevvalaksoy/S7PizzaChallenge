@@ -23,7 +23,7 @@ const errorMessages = {
 }
 
 export default function Order (props) {
-    const {price, formData, setFormData, count, setCount, initialPrice, initialData, setResponseData} = props;
+    const {price, formData, setFormData, count, setCount, initialData, setResponseData} = props;
     const [errors, setErrors] = useState({
         isim: false,
         malzemeler: false,
@@ -43,7 +43,7 @@ export default function Order (props) {
     return (
         <Container>
             <Header/>
-            <Description initialPrice={initialPrice}/>
+            <Description price={price}/>
             <Size setFormData={setFormData} formData={formData}/>
             <Ingridients setFormData={setFormData} formData={formData} setErrors={setErrors} errors={errors} errorMessages={errorMessages}/>
             <Note setFormData={setFormData} formData={formData} setErrors={setErrors} errors={errors} errorMessages={errorMessages}/>

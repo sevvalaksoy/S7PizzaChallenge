@@ -61,7 +61,6 @@ export default function Total (props) {
 
         const URL = "https://reqres.in/api/pizza";
         axios.post(URL, formData).then((response)=>{
-            setFormData(initialData);
             console.log(response.data);
             setResponseData(response.data);
             history.push("/success");

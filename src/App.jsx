@@ -18,9 +18,10 @@ const initialData = {
 
 function App() {
   const [count, setCount] = useState(1);
-  const [price] = useState(initialPrice);
   const [formData, setFormData] = useState(initialData);
   const [responseData, setResponseData] = useState(null);
+  const price = initialPrice;
+
 
   return (
     <>
@@ -29,10 +30,10 @@ function App() {
           <Home/>
         </Route>
         <Route path="/order" exact>
-          <Order price={price} formData={formData} setFormData={setFormData} count={count} setCount={setCount} initialPrice={initialPrice} initialData={initialData} setResponseData={setResponseData}/>
+          <Order price={price} formData={formData} setFormData={setFormData} count={count} setCount={setCount} initialData={initialData} setResponseData={setResponseData}/>
         </Route>
         <Route path="/success" exact>
-          <Success responseData={responseData}/>
+          <Success responseData={responseData} price={price} formData={formData} count={count}/>
         </Route>
       </Switch>
     </>
