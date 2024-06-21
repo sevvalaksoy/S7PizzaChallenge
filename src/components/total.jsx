@@ -1,7 +1,7 @@
 import axios from "axios"
-import { useState } from "react"
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 import styled from "styled-components"
+import OrderPrice from "./orderprice"
 
 const Cover = styled.section`
     display: flex;
@@ -34,24 +34,10 @@ const OrderButton = styled.button`
     font-weight: 600;
     margin-top: -.2rem;
 `
-const OrderPrice = styled.div`
-    font-family: "Barlow";
-    font-weight: 600;
-    font-size: 18px;
-    display: inline-block;
-    width: 386px;
-    height: 197px;
-    border: 1px, solid, #D9D9D9;
-    border-radius: 6px;
-`
 
 export default function Total (props) {
 
-    const {price, formData, setFormData, initialData, isValid} = props;
-
-    const [count, setCount] = useState(1);
-
-    let selected = formData.malzemeler.length*5;
+    const {price, formData, setFormData, initialData, isValid, count, setCount, setResponseData} = props;
 
     let history = useHistory();
 
@@ -76,9 +62,10 @@ export default function Total (props) {
         const URL = "https://reqres.in/api/pizza";
         axios.post(URL, formData).then((response)=>{
             setFormData(initialData);
-            console.log(response.data)
+            console.log(response.data);
+            setResponseData(response.data);
             history.push("/success");
-        })
+        }).catch(()=> console.warn("İnternete bağlanılamadı."))
     }
 
     return (
@@ -89,17 +76,7 @@ export default function Total (props) {
                 <IncreaseButton onClick={increase}>+</IncreaseButton>
             </div>
             <div style={{marginRight:"-2rem"}}>
-                <OrderPrice>
-                    <p style={{fontSize:"20px", color:"#292929", textAlign:"left", marginTop:"2.5rem", paddingLeft:"2.8rem"}}>Sipariş Toplamı</p>
-                    <div style={{color:"#5F5F5F", display:"flex", justifyContent:"space-around", gap:"5rem"}}>
-                        <p style={{margin:"0"}}>Seçimler</p>
-                        <p style={{margin:"0"}}>{selected}₺</p>
-                    </div>
-                    <div style={{color:"#CE2829",display:"flex", justifyContent:"space-around", gap:"5.5rem"}}>
-                        <p>Toplam</p>
-                        <p>{(price+selected)*count}₺</p>
-                    </div>
-                </OrderPrice>
+                <OrderPrice price={price} formData={formData} count={count}/>
                 <OrderButton data-cy="submit-button" disabled={!isValid} onClick={handleSubmit} type="submit">SİPARİŞ VER</OrderButton>
             </div>
         </Cover>

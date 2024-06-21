@@ -17,25 +17,13 @@ const Finish = styled.footer`
     height: 100px;
 `
 
-const initialData = {
-    isim: "",
-    adet: 1,
-    boyut: "",
-    kalınlık: "",
-    malzemeler: [],
-    not: "",
-}
-
 const errorMessages = {
     isim: "En az 3 karakter giriniz!",
     malzemeler: "En az 4 en fazla 10 adet seçiniz!"
 }
 
-let initialPrice = 85.50;
-
-export default function Order () {
-    const [price] = useState(initialPrice);
-    const [formData, setFormData] = useState(initialData);
+export default function Order (props) {
+    const {price, formData, setFormData, count, setCount, initialPrice, initialData, setResponseData} = props;
     const [errors, setErrors] = useState({
         isim: false,
         malzemeler: false,
@@ -59,7 +47,7 @@ export default function Order () {
             <Size setFormData={setFormData} formData={formData}/>
             <Ingridients setFormData={setFormData} formData={formData} setErrors={setErrors} errors={errors} errorMessages={errorMessages}/>
             <Note setFormData={setFormData} formData={formData} setErrors={setErrors} errors={errors} errorMessages={errorMessages}/>
-            <Total price={price} setFormData={setFormData} formData={formData} initialData={initialData} isValid={isValid}/>
+            <Total price={price} setFormData={setFormData} formData={formData} initialData={initialData} isValid={isValid} count={count} setCount={setCount} setResponseData={setResponseData}/>
             <Finish/>
         </Container>
     )

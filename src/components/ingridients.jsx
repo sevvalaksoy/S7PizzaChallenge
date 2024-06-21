@@ -52,46 +52,46 @@ export default function Ingridients (props) {
             <Warning>En fazla 10 malzeme seçebilirsiniz. 5₺</Warning>
             <div style={{color:"#5F5F5F", fontFamily:"Barlow", fontWeight:"700", fontSize:"16px", width:"586px", height:"214px",display:"flex", flexDirection:"column", flexWrap:"wrap", gap:"1rem"}}>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="pepperoni" data-cy="pep-ing" style={{marginRight:"1rem"}}/>Pepperoni
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Pepperoni" data-cy="pep-ing" style={{marginRight:"1rem"}}/>Pepperoni
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="tavukIzgara" data-cy="tI-ing" style={{marginRight:"1rem"}}/>Tavuk Izgara
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Tavuk-Izgara" data-cy="tI-ing" style={{marginRight:"1rem"}}/>Tavuk Izgara
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="mısır" data-cy="mıs-ing" style={{marginRight:"1rem"}}/>Mısır
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Mısır" data-cy="mıs-ing" style={{marginRight:"1rem"}}/>Mısır
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="sarımsak" data-cy="sar-ing" style={{marginRight:"1rem"}}/>Sarımsak
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Sarımsak" data-cy="sar-ing" style={{marginRight:"1rem"}}/>Sarımsak
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="ananas" style={{marginRight:"1rem"}}/>Ananas
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Ananas" style={{marginRight:"1rem"}}/>Ananas
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="sosis" style={{marginRight:"1rem"}}/>Sosis
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Sosis" style={{marginRight:"1rem"}}/>Sosis
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="soğan" style={{marginRight:"1rem"}}/>Soğan
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Soğan" style={{marginRight:"1rem"}}/>Soğan
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="sucuk" style={{marginRight:"1rem"}}/>Sucuk
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Sucuk" style={{marginRight:"1rem"}}/>Sucuk
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="biber" style={{marginRight:"1rem"}}/>Biber
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Biber" style={{marginRight:"1rem"}}/>Biber
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="kabak" style={{marginRight:"1rem"}}/>Kabak
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Kabak" style={{marginRight:"1rem"}}/>Kabak
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="kanadaJambonu" style={{marginRight:"1rem"}}/>Kanada Jambonu
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Kanada-Jambonu" style={{marginRight:"1rem"}}/>Kanada Jambonu
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="domates" style={{marginRight:"1rem"}}/>Domates
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Domates" style={{marginRight:"1rem"}}/>Domates
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="jalepeno" style={{marginRight:"1rem"}}/>Jalepeno
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Jalepeno" style={{marginRight:"1rem"}}/>Jalepeno
                 </label>
                 <label className="ingredients">
-                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="zeytin" style={{marginRight:"1rem"}}/>Zeytin
+                    <input type="checkbox" onChange={handleChange} name="malzemeler" value="Zeytin" style={{marginRight:"1rem"}}/>Zeytin
                 </label>
             </div>
             <p style={{color:"red"}}>{errors.malzemeler && errorMessages.malzemeler}</p>
