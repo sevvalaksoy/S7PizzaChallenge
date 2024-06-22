@@ -7,8 +7,9 @@ const Container = styled.div`
     display: inline-block;
     width: 386px;
     height: 197px;
-    border: 1px, solid, #D9D9D9;
+    border: 1px, solid, #FAF7F2;
     border-radius: 6px;
+    background-color: #FAF7F2;
 `
 
 export default function OrderPrice (props){

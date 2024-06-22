@@ -12,14 +12,14 @@ const Cover = styled.section`
     margin-bottom: 10rem;
 `
 const DecreaseButton = styled.button`
-    background-color: #FDC913;
+    background-color: #FAF7F2;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
     width: 47px;
     height: 56px;
 `
 const IncreaseButton = styled.button`
-    background-color: #FDC913;
+    background-color: #FAF7F2;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     width: 47px;
@@ -72,7 +72,7 @@ export default function Total (props) {
         <Cover>
             <div style={{display:"flex", alignItems:"center", marginTop:"-1rem"}}>
                 <DecreaseButton onClick={decrease}>-</DecreaseButton>
-                <p style={{width:"46px", height:"55px", border:"1px, solid, #D9D9D9", alignItems:"center", display:"flex", justifyContent:"center"}}>{count}</p>
+                <p style={{width:"46px", height:"55px", border:"1px, solid, #FAF7F2", alignItems:"center", display:"flex", justifyContent:"center", backgroundColor:"#FAF7F2"}}>{count}</p>
                 <IncreaseButton onClick={increase}>+</IncreaseButton>
             </div>
             <div style={{marginRight:"-2rem"}}>
