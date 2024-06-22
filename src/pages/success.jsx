@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import styled from "styled-components"
 
 const Cover = styled.div`
@@ -67,7 +66,7 @@ export default function Success (props) {
     const {responseData, price, count, formData} = props;
 
     window.scrollTo(0,0);
-    
+
     let selected = formData.malzemeler.length*5;
 
     return (
