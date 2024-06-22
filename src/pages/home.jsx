@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 import styled from "styled-components"
+import Footer from "../components/footer"
 
 const Slogan = styled.p`
     color: white;
@@ -111,7 +112,6 @@ const Card = styled.div`
     height: 440px;
     border-radius: 12px;
     background-color: white;
-
     &:hover {
         cursor: pointer;
         transform: scale(1.05)
@@ -222,7 +222,7 @@ export default function Home () {
                 </Barmenu>
                 <div style={{width:"100%", display:"flex", justifyContent:"space-around", margin:"2rem"}}>
                     <Card onClick={clickHandler}>
-                        <img src="../../Assets/mile2-aseets/pictures/food-1.png"/>
+                        <img src="../../Assets/mile2-aseets/pictures/food-1.png" style={{marginTop:"2rem"}}/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Terminal Pizza</p>
                             <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
@@ -233,7 +233,7 @@ export default function Home () {
                         </div>
                     </Card>
                     <Card onClick={clickHandler}>
-                        <img src="../../Assets/mile2-aseets/pictures/food-2.png"/>
+                        <img src="../../Assets/mile2-aseets/pictures/food-2.png" style={{marginTop:"2rem"}}/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Position Absolute Acı Pizza</p>
                             <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
@@ -244,7 +244,7 @@ export default function Home () {
                         </div>
                     </Card>
                     <Card onClick={clickHandler}>
-                        <img src="../../Assets/mile2-aseets/pictures/food-3.png"/>
+                        <img src="../../Assets/mile2-aseets/pictures/food-3.png" style={{marginTop:"2rem"}}/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>useEffect Tavuklu Burger</p>
                             <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
@@ -256,9 +256,7 @@ export default function Home () {
                     </Card>
                 </div>
             </Options>
-            <footer style={{width:"100%", backgroundColor:"#1A1A1A", height:"560px"}}>
-
-            </footer>
+            <Footer/>
         </div>
     )
 }
