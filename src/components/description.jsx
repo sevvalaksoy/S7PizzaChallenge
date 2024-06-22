@@ -43,7 +43,7 @@ export default function Description (props) {
                     <p style={{fontFamily:"Barlow", fontSize:"16px", fontWeight:"500", color:"#5F5F5F"}}>Ana Sayfa - <span style={{color:"#CE2829"}}>Sipariş Oluştur</span></p>
                     <Name>Position Absolute Acı Pizza</Name>
                     <Price>{price}₺
-                        <div style={{fontWeight:"400", fontSize:"16px", color:"#5F5F5F", display:"flex", justifyContent:"space-between", width:"30%"}}>4.9 <span>(200)</span></div>
+                        <div style={{fontWeight:"400", fontSize:"16px", color:"#5F5F5F", display:"flex", justifyContent:"space-between", width:"30%", paddingRight:"2rem"}}>4.9 <span>(200)</span></div>
                     </Price>
                     <Descrp>Frontent Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. 
                         Pizza, domates, peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, 
