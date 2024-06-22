@@ -34,14 +34,10 @@ h1 {
 button {
   font-size: 1em;
   font-weight: 500;
-  background-color: #f9f9f9;
   cursor: pointer;
   border: 1px solid transparent;
 }
 
-button:hover {
-  border-color: #646cff;
-}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

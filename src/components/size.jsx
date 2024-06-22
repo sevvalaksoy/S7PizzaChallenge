@@ -1,4 +1,3 @@
-import { hover } from "@testing-library/user-event/dist/cjs/convenience/hover.js";
 import { Button, ButtonGroup } from "reactstrap";
 import styled from "styled-components"
 
@@ -8,14 +7,6 @@ const Cover = styled.section`
     font-family: "Barlow";
     justify-content: space-between;
 `
-const buttonStyles = {
-    backgroundColor: '#FAF7F2',
-    width: '56px',
-    height: '56px',
-    borderRadius: '28px',
-    outline: 'none',
-    cursor: 'pointer', 
-  };
 
 export default function Size (props) {
 
@@ -34,28 +25,46 @@ export default function Size (props) {
                     name="boyut"
                     value="Küçük"
                     onClick={handleChange}
-                    checked={formData.boyut==="Küçük"}       
-                    className="buttons"
-                    style={buttonStyles}             >
+                    checked={formData.boyut==="Küçük"}  
+                    active={formData.boyut==="Küçük"}   
+                    style={{
+                        backgroundColor: formData.boyut === 'Küçük' ? '#FFEECC' : '#FAF7F2',
+                        width: '56px',
+                        height: '56px',
+                        borderRadius: '28px',
+                        cursor: 'pointer',
+                      }}           >
                     S
-                    </Button>
+                    </Button> 
                     <Button
-                    name="boyut"
+                    name="boyut" 
                     value="Orta" 
                     data-cy="orta-boy"
                     onClick={handleChange}
-                    checked={formData.boyut==="Orta"}   
-                    className="buttons"  
-                    style={buttonStyles}                >
+                    checked={formData.boyut==="Orta"} 
+                    active={formData.boyut==="Orta"}   
+                    style={{
+                        backgroundColor: formData.boyut === 'Orta' ? '#FFEECC' : '#FAF7F2',
+                        width: '56px',
+                        height: '56px',
+                        borderRadius: '28px',
+                        cursor: 'pointer',
+                      }}                >
                     M
                     </Button>
                     <Button
                     name="boyut"
                     value="Büyük"
                     onClick={handleChange}
-                    checked={formData.boyut==="Büyük"}   
-                    className="buttons"
-                    style={buttonStyles}                  >
+                    checked={formData.boyut==="Büyük"} 
+                    active={formData.boyut==="Büyük"}  
+                    style={{
+                        backgroundColor: formData.boyut === 'Büyük' ? '#FFEECC' : '#FAF7F2',
+                        width: '56px',
+                        height: '56px',
+                        borderRadius: '28px',
+                        cursor: 'pointer',
+                      }}                >
                     L
                     </Button>
                 </ButtonGroup>
