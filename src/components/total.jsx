@@ -9,6 +9,7 @@ const Cover = styled.section`
     justify-content: space-between;
     margin-top: 2rem;
     align-items: flex-start;
+    margin-bottom: 10rem;
 `
 const DecreaseButton = styled.button`
     background-color: #FDC913;

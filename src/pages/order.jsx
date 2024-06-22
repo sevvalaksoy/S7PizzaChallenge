@@ -6,15 +6,13 @@ import Ingridients from "../components/ingridients"
 import Note from "../components/note"
 import Total from "../components/total"
 import { useEffect, useState } from "react"
+import Footer from "../components/footer"
 
 const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-`
-const Finish = styled.footer`
-    height: 100px;
 `
 
 const errorMessages = {
@@ -48,7 +46,7 @@ export default function Order (props) {
             <Ingridients setFormData={setFormData} formData={formData} setErrors={setErrors} errors={errors} errorMessages={errorMessages}/>
             <Note setFormData={setFormData} formData={formData} setErrors={setErrors} errors={errors} errorMessages={errorMessages}/>
             <Total price={price} setFormData={setFormData} formData={formData} initialData={initialData} isValid={isValid} count={count} setCount={setCount} setResponseData={setResponseData}/>
-            <Finish/>
+            <Footer/>
         </Container>
     )
 }
