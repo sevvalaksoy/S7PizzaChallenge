@@ -21,6 +21,7 @@ const errorMessages = {
 }
 
 export default function Order (props) {
+    window.scrollTo(0,0);
     const {price, formData, setFormData, count, setCount, initialData, setResponseData} = props;
     const [errors, setErrors] = useState({
         isim: false,
