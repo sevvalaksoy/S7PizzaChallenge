@@ -23,7 +23,10 @@ const errorMessages = {
 export default function Order (props) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        setFormData(initialData);
+        setCount(1);
       }, []);
+    
     const {price, formData, setFormData, count, setCount, initialData, setResponseData} = props;
     const [errors, setErrors] = useState({
         isim: false,
