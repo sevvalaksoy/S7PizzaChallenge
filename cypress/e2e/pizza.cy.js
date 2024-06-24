@@ -40,9 +40,9 @@ describe('Ingridients check', () => {
     cy.get('[data-cy="acıktım-button"]').as("loginLink");
     cy.get("@loginLink").click();
     //act
-    cy.get('[data-cy="pep-ing"]').check();
-    cy.get('[data-cy="tI-ing"]').check();
-    cy.get('[data-cy="sar-ing"]').check();
+    cy.get('[data-cy="Pepperoni-ing"]').check();
+    cy.get('[data-cy="Tavuk-Izgara-ing"]').check();
+    cy.get('[data-cy="Sarımsak-ing"]').check();
     //assert
     cy.contains("En az 4 en fazla 10 adet seçiniz!").should("be.visible");
   });
@@ -55,12 +55,12 @@ describe('submit form', () => {
     cy.get('[data-cy="acıktım-button"]').as("loginLink");
     cy.get("@loginLink").click();
     //act
-    cy.get('[data-cy="pep-ing"]').check();
-    cy.get('[data-cy="tI-ing"]').check();
-    cy.get('[data-cy="sar-ing"]').check();
-    cy.get('[data-cy="mıs-ing"]').check();
+    cy.get('[data-cy="Pepperoni-ing"]').check();
+    cy.get('[data-cy="Tavuk-Izgara-ing"]').check();
+    cy.get('[data-cy="Sarımsak-ing"]').check();
+    cy.get('[data-cy="Mısır-ing"]').check();
     cy.get('[data-cy="name-input"]').type("Şevval");
-    cy.get('[data-cy="orta-boy"]').check();
+    cy.get('[data-cy="orta-boy"]').click();
     cy.get('[data-cy="select-bar"]').select("Klasik Hamur");
     cy.get('[data-cy="submit-button"]').as("submitLink");
     cy.get("@submitLink").click();
