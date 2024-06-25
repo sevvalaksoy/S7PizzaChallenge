@@ -38,7 +38,7 @@ const OrderButton = styled.button`
 
 export default function Total (props) {
 
-    const {price, formData, setFormData, initialData, isValid, count, setCount, setResponseData} = props;
+    const {price, formData, setFormData, isValid, count, setCount, setResponseData} = props;
 
     let history = useHistory();
 
@@ -53,8 +53,6 @@ export default function Total (props) {
         setCount(count -1);
         setFormData({...formData, adet:count-1});
     }
-    
-    console.log(formData);
 
     function handleSubmit (event) {
         event.preventDefault();
