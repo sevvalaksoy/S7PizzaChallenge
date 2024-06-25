@@ -2,10 +2,10 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min"
 import styled from "styled-components"
 import Footer from "../components/footer"
 
-const Slogan = styled.p`
+const Slogan = styled.h1`
     color: white;
     font-size: 5rem;
-    margin: 0;
+    margin: 1.5rem;
     font-family: "Roboto Condensed";
     font-weight: 300;
 `
