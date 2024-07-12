@@ -23,6 +23,7 @@ const Cover = styled.div`
     display: inline-block;
     width: 100%;
     background: url("../../Assets/mile1-assets/home-banner.png");
+    background-position: center;
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -64,10 +65,11 @@ const Menu = styled.div`
     }
 `
 const FirstDiv = styled.div`
-    width: 50%;
+    width: 40%;
     height: 100%;
     border-radius: 12px;
     background: url("../../Assets/mile2-aseets/cta/kart-1.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 `
@@ -86,6 +88,7 @@ const SecondDiv = styled.div`
     height: 50%;
     border-radius: 12px;
     background: url("../../Assets/mile2-aseets/cta/kart-2.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -95,6 +98,7 @@ const ThirdDiv = styled.div`
     height: 50%;
     border-radius: 12px;
     background: url("../../Assets/mile2-aseets/cta/kart-3.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -166,7 +170,7 @@ export default function Home () {
                     </Menu>
                 </ul>
             </Barmenu>
-            <div style={{width:"1320px", height:"560px", display:"flex", gap:"2rem", marginTop:"6rem"}}>
+            <div style={{width:"100%", height:"560px", display:"flex", gap:"2rem", marginTop:"6rem", justifyContent:"center"}}>
                 <FirstDiv>
                     <div style={{width:"263px", height:"300px", margin:"0", display:"flex", flexDirection:"column", padding:"3rem"}}>
                         <h1 style={{fontFamily:"Quattrocento", fontWeight:"600", fontSize:"68px", color:"white", textAlign:"left", margin:"0"}}>Özel Lezzetus</h1>
@@ -174,7 +178,7 @@ export default function Home () {
                         <SipVerButton onClick={clickHandler}>SİPARİŞ VER</SipVerButton>
                     </div>
                 </FirstDiv>
-                <div style={{display:"flex", flexDirection:"column", width:"50%", gap:"2rem"}}>
+                <div style={{display:"flex", flexDirection:"column", width:"40%", gap:"2rem"}}>
                     <SecondDiv>
                         <div style={{display:"flex", flexDirection:"column", padding:"3rem", width:"260px", height:"160px", gap:"2rem"}}>
                             <h1 style={{fontFamily:"Barlow", fontWeight:"600", fontSize:"32px", color:"white", textAlign:"left", margin:"0"}}>Hackathlon Burger Menü</h1>
