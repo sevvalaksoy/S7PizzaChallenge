@@ -37,7 +37,7 @@ export default function Description (props) {
 
     return (
         <Cover>
-            <img src="../../Assets/mile2-aseets/pictures/form-banner.png"/>
+            <img src={"/form-banner.png"}/>
             <div>
                 <div style={{width:"607px", display:"flex", flexDirection:"column", alignItems:"flex-start"}}>
                     <p style={{fontFamily:"Barlow", fontSize:"16px", fontWeight:"500", color:"#5F5F5F"}}>Ana Sayfa - <span style={{color:"#CE2829"}}>Sipariş Oluştur</span></p>

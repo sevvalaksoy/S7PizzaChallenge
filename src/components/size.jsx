@@ -78,7 +78,7 @@ export default function Size (props) {
                     <option value="İncecik" style={{fontWeight:"500",fontSize:"14px",color:"#5F5F5F", fontFamily:"Barlow",}}>İncecik Hamur</option>
                     <option value="Klasik" style={{fontWeight:"500",fontSize:"14px",color:"#5F5F5F", fontFamily:"Barlow",}}>Klasik Hamur</option>
                 </select>
-                <img src="../../Assets/mile2-aseets/down-arrow.png" style={{width:"15px", height:"15px", marginLeft:"-2rem", marginBottom:"-0.2rem"}}/>
+                <img src={"/down-arrow.png"} style={{width:"15px", height:"15px", marginLeft:"-2rem", marginBottom:"-0.2rem"}}/>
             </div>
         </Cover>
     )

@@ -13,7 +13,7 @@ export default function Header () {
 
     return (
             <Head>
-                    <img src="../../Assets/mile1-assets/logo.svg" style={{width:"360px", height:"45px"}}/>
+                    <img src={"/logo.svg"} style={{width:"360px", height:"45px"}}/>
             </Head>
     )
 }

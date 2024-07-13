@@ -74,7 +74,7 @@ export default function Success (props) {
             <section style={{display:"flex", justifyContent:"center"}}>
                 <Container>
                     <div style={{margin:"3rem 0"}}>
-                    <img src="../../Assets/mile1-assets/logo.svg" style={{width:"360px", height:"45px"}}/>
+                    <img src={"/logo.svg"} style={{width:"360px", height:"45px"}}/>
                     </div>
                     <OnWay>lezzetin yolda</OnWay>
                     <Congrats>SİPARİŞ ALINDI</Congrats>
