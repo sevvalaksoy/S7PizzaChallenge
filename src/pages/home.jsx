@@ -134,7 +134,7 @@ export default function Home () {
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", backgroundColor:"#FAF7F2"}}>
             <Cover>
                 <div style={{margin:"3rem 0"}}>
-                <img src="../../Assets/mile1-assets/logo.svg"/>
+                <img src={"/logo.svg"}/>
                 </div>
                 <div>
                     <Dontmiss>fırsatı kaçırma</Dontmiss>
