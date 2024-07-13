@@ -145,27 +145,27 @@ export default function Home () {
             <Barmenu>
                 <ul style={{display:"flex", alignItems:"center", justifyContent:"space-around", margin:"1rem 10rem", padding:"0"}}>
                     <Menu>
-                        <img src="../../Assets/mile2-aseets/icons/1.svg"/>
+                        <img src={"/1.svg"}/>
                         <Titles>YENİ! Kore</Titles>
                     </Menu>
                     <Menu>
-                        <img src="../../Assets/mile2-aseets/icons/2.svg"/>
+                        <img src={"/2.svg"}/>
                         <Titles>Pizza</Titles>
                     </Menu>
                     <Menu>
-                        <img src="../../Assets/mile2-aseets/icons/3.svg"/>
+                        <img src={"/3.svg"}/>
                         <Titles>Burger</Titles>
                     </Menu>
                     <Menu>
-                        <img src="../../Assets/mile2-aseets/icons/4.svg"/>
+                        <img src={"/4.svg"}/>
                         <Titles>Kızartmalar</Titles>
                     </Menu>
                     <Menu>
-                        <img src="../../Assets/mile2-aseets/icons/5.svg"/>
+                        <img src={"/5.svg"}/>
                         <Titles>Fast food</Titles>
                     </Menu>
                     <Menu>
-                        <img src="../../Assets/mile2-aseets/icons/6.svg"/>
+                        <img src={"/icons/6.svg"}/>
                         <Titles>Gazlı İçecek</Titles>
                     </Menu>
                 </ul>
@@ -199,34 +199,34 @@ export default function Home () {
                 <Barmenu style={{backgroundColor:"#FAF7F2"}}>
                     <ul style={{display:"flex", alignItems:"center", justifyContent:"space-between"}}>
                         <Menu>
-                            <img src="../../Assets/mile2-aseets/icons/1.svg"/>
+                            <img src={"/1.svg"}/>
                             <Titles>Ramen</Titles>
                         </Menu>
                         <Menu>
-                            <img src="../../Assets/mile2-aseets/icons/2.svg"/>
+                            <img src={"/2.svg"}/>
                             <Titles>Pizza</Titles>
                         </Menu>
                         <Menu>
-                            <img src="../../Assets/mile2-aseets/icons/3.svg"/>
+                            <img src={"/3.svg"}/>
                             <Titles>Burger</Titles>
                         </Menu>
                         <Menu>
-                            <img src="../../Assets/mile2-aseets/icons/4.svg"/>
+                            <img src={"/4.svg"}/>
                             <Titles>French fries</Titles>
                         </Menu>
                         <Menu>
-                            <img src="../../Assets/mile2-aseets/icons/5.svg"/>
+                            <img src={"/5.svg"}/>
                             <Titles>Fast food</Titles>
                         </Menu>
                         <Menu>
-                            <img src="../../Assets/mile2-aseets/icons/6.svg"/>
+                            <img src={"/6.svg"}/>
                             <Titles>Soft drinks</Titles>
                         </Menu>
                     </ul>
                 </Barmenu>
                 <div style={{width:"100%", display:"flex", justifyContent:"space-around", margin:"2rem"}}>
                     <Card onClick={clickHandler}>
-                        <img src="../../Assets/mile2-aseets/pictures/food-1.png" style={{marginTop:"2rem"}}/>
+                        <img src={"/food-1.png"} style={{marginTop:"2rem"}}/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Terminal Pizza</p>
                             <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
@@ -237,7 +237,7 @@ export default function Home () {
                         </div>
                     </Card>
                     <Card onClick={clickHandler}>
-                        <img src="../../Assets/mile2-aseets/pictures/food-2.png" style={{marginTop:"2rem"}}/>
+                        <img src={"/food-2.png"} style={{marginTop:"2rem"}}/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>Position Absolute Acı Pizza</p>
                             <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
@@ -248,7 +248,7 @@ export default function Home () {
                         </div>
                     </Card>
                     <Card onClick={clickHandler}>
-                        <img src="../../Assets/mile2-aseets/pictures/food-3.png" style={{marginTop:"2rem"}}/>
+                        <img src={"/food-3.png"} style={{marginTop:"2rem"}}/>
                         <div>
                             <p style={{fontFamily:"Barlow", fontSize:"22px", fontWeight:"600", textAlign:"left", padding:"0 2rem", margin:"0"}}>useEffect Tavuklu Burger</p>
                             <div style={{display:"flex", justifyContent:"space-between", padding:"0 2rem"}}>
