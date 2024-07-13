@@ -22,7 +22,7 @@ const ButtonForm = styled.button`
 const Cover = styled.div`
     display: inline-block;
     width: 100%;
-    background: url("../../Assets/mile1-assets/home-banner.png");
+    background-image: url("/home-banner.png");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -68,7 +68,7 @@ const FirstDiv = styled.div`
     width: 40%;
     height: 100%;
     border-radius: 12px;
-    background: url("../../Assets/mile2-aseets/cta/kart-1.png");
+    background-image: url("/kart-1.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ const SecondDiv = styled.div`
     width: 100%;
     height: 50%;
     border-radius: 12px;
-    background: url("../../Assets/mile2-aseets/cta/kart-2.png");
+    background-image: url("/kart-2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ const ThirdDiv = styled.div`
     width: 100%;
     height: 50%;
     border-radius: 12px;
-    background: url("../../Assets/mile2-aseets/cta/kart-3.png");
+    background: url("/kart-3.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
