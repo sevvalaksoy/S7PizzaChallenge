@@ -58,7 +58,7 @@ export default function Footer () {
                     <div style={{width:"1320px", display:"flex", justifyContent:"space-between"}}>
                         <p style={{fontFamily:"Barlow", fontWeight:"400", fontSize:"16px", color:"white"}}>© 2023 Teknolojik Yemekler.</p>
                         <ul>
-                            <img src="../../Assets/mile2-aseets/footer/tw.png" style={{width:"18px", height:"15px"}}/>
+                            <img src={"/tw.png"} style={{width:"18px", height:"15px"}}/>
                         </ul>
                     </div>
                 </div>
