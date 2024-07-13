@@ -15,18 +15,18 @@ export default function Footer () {
             <FooterSection>
                 <div style={{display:"flex", justifyContent:"space-between", width:"1320px", padding:"6rem 0 3rem 0"}}>
                     <div style={{display:"flex", position:"relative", height:"350px"}}>
-                        <img src="../../Assets/mile2-aseets/footer/logo-footer.svg" style={{position:"absolute", top:"0", left:"0"}}/>
+                        <img src={"/logo-footer.svg"} style={{position:"absolute", top:"0", left:"0"}}/>
                         <div style={{width:"305px",display:"flex", flexDirection:"column", alignItems:"flex-start", justifyContent:"end", gap:"2rem", height:"300px"}}>
                             <div style={{textAlign:"left", alignItems:"flex-start", display:"flex", gap:"1rem"}}>
-                                <img src="../../Assets/mile2-aseets/footer/icons/icon-1.png" style={{width:"28px", height:"28px"}}/>
+                                <img src={"/icon-1.png"} style={{width:"28px", height:"28px"}}/>
                                 <span style={{fontFamily:"Barlow", fontWeight:"400", fontSize:"18px", color:"white"}}>341 Londonderry Road, <br/> Istanbul Türkiye </span>
                             </div>
                             <div style={{textAlign:"left", alignItems:"flex-start", display:"flex", gap:"1rem"}}>
-                                <img src="../../Assets/mile2-aseets/footer/icons/icon-2.png" style={{width:"28px", height:"28px"}}/>
+                                <img src={"/icon-2.png"} style={{width:"28px", height:"28px"}}/>
                                 <span style={{fontFamily:"Barlow", fontWeight:"400", fontSize:"18px", color:"white"}}>aciktim@teknolojikyemekler.com </span>
                             </div>
                             <div style={{textAlign:"left", alignItems:"flex-start", display:"flex", gap:"1rem"}}>
-                                <img src="../../Assets/mile2-aseets/footer/icons/icon-3.png" style={{width:"28px", height:"28px"}}/>
+                                <img src={"/icon-3.png"} style={{width:"28px", height:"28px"}}/>
                                 <span style={{fontFamily:"Barlow", fontWeight:"400", fontSize:"18px", color:"white"}}>+90 216 123 45 67 </span>
                             </div>
                         </div>
@@ -45,12 +45,12 @@ export default function Footer () {
                     <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", width:"306px", height:"290px" }}>
                         <h1 style={{fontFamily:"Barlow", fontWeight:"500", fontSize:"24px", color:"white", textAlign:"left", paddingBottom:"1rem"}}>Instagram</h1>
                         <ul style={{listStyleType:"none", display:"flex", width:"100%", height:"100%", flexDirection:"column", flexWrap:"wrap", padding:"0"}}>
-                            <li><img src="../../Assets/mile2-aseets/footer/insta/li-0.png"/></li>
-                            <li><img src="../../Assets/mile2-aseets/footer/insta/li-1.png"/></li>
-                            <li><img src="../../Assets/mile2-aseets/footer/insta/li-2.png"/></li>
-                            <li><img src="../../Assets/mile2-aseets/footer/insta/li-3.png"/></li>
-                            <li><img src="../../Assets/mile2-aseets/footer/insta/li-4.png"/></li>
-                            <li><img src="../../Assets/mile2-aseets/footer/insta/li-5.png"/></li>
+                            <li><img src={"/li-0.png"}/></li>
+                            <li><img src={"/li-1.png"}/></li>
+                            <li><img src={"/li-2.png"}/></li>
+                            <li><img src={"/li-3.png"}/></li>
+                            <li><img src={"/li-4.png"}/></li>
+                            <li><img src={"/li-5.png"}/></li>
                         </ul>
                     </div>
                 </div>
